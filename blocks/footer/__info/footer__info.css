@@ -1,0 +1,6 @@
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-size: 18px;
+}

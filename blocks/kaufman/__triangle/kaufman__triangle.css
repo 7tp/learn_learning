@@ -1,0 +1,22 @@
+.kaufman__triangle {
+    position: absolute;
+    right: -210px;
+    top: 0px;
+    width: 877px;
+    height: 877px;
+    background-image: url(../../../images/triangle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: triangle-pic_rotate 20s linear infinite;
+}
+
+/* Анимация треугольника*/
+@keyframes triangle-pic_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

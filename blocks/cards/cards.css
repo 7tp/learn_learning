@@ -1,0 +1,13 @@
+@import url(./__item/cards__item.css);
+@import url(./__image/cards__image.css);
+@import url(./__title/cards__title.css);
+@import url(./__description/cards__description.css);
+
+.cards {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    grid-column-gap: 100px;
+}
