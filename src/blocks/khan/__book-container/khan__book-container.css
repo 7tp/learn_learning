@@ -1,0 +1,9 @@
+.khan__book-container {
+    display:flex;
+}
+
+@media screen and (max-width: 1078px) {
+    .khan__book-container {
+        flex-direction: column-reverse;
+    }
+}

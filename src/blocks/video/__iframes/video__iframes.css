@@ -1,0 +1,13 @@
+.video__iframes {
+    max-width: 1050px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1110px) {
+    .video__iframes {
+        flex-direction: column;
+    }
+}

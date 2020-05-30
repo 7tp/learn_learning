@@ -1,0 +1,29 @@
+@import url(./__logo/header__logo.css);
+@import url(./__title/header__title.css);
+@import url(./__subtitle/header__subtitle.css);
+@import url(./__link/header__link.css);
+@import url(./__main-illustration/header__main-illustration.css);
+@import url(./__square-pic/header__square-pic.css);
+
+.header {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    background-color:#F2F2F2;
+    padding: 0 120px 0 120px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1280px) {
+    .header {
+        padding: 0 64px 0 64px;
+    }
+}

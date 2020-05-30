@@ -1,0 +1,17 @@
+.digits {
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 100px 90px 0 90px;
+}
+
+@media screen and (max-width: 400px) {
+    .digits {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .digits {
+        padding: 40px;
+    }
+}

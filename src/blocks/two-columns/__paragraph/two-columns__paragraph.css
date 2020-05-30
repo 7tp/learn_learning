@@ -1,0 +1,18 @@
+.two-columns__paragraph {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    .two-columns__paragraph {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px){
+    .two-columns__paragraph {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
