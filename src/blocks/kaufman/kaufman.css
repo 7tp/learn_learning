@@ -1,0 +1,23 @@
+@import url(./__triangle/kaufman__triangle.css);
+
+.kaufman {
+    position: relative;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    z-index: -2;
+    padding: 90px;
+}
+
+@media screen and (max-width: 400px) {
+    .kaufman {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .kaufman {
+        padding: 40px;
+    }
+}
+

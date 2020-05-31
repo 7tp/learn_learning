@@ -1,0 +1,25 @@
+.feinman__title {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 80px;
+    width: 648px; 
+    font-size: 120px;
+    line-height: 1.15;
+    font-weight: bold;
+    z-index: 2;
+}
+
+@media screen and (max-width: 400px) {
+    .feinman__title {
+        font-size: 55px;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .feinman__title {
+        font-size: 62px;
+        width: 450px;
+    }
+}

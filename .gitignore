@@ -1,0 +1,14 @@
+/node_modules
+/dist
+
+# Системная информация
+/logs
+*.log
+
+# Настройки рабочих директорий Visual Studio Code
+*.vscode
+
+# Стандартные файлы macOS
+DS-Store
+
+*.git

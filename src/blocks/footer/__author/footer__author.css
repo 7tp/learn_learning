@@ -1,0 +1,11 @@
+.footer__author {
+    width: 90%;
+    line-height: 25px;
+    margin: 83px auto 0 auto;
+}
+
+@media screen and (max-width: 471px) {
+    .footer__author {
+        margin: 20px auto 0 auto;
+    }
+}

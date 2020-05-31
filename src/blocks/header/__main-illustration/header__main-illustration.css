@@ -1,0 +1,19 @@
+.header__main-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 765px;
+    height: 608px;
+    background-image: url(../../../images/two_again.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+@media screen and (max-width: 765px) {
+    .header__main-illustration {
+        width: 100%;
+        background-size: 100%;
+        background-position-y: bottom;
+    }
+}
