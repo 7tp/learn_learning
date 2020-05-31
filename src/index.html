@@ -8,12 +8,12 @@
     <meta name="keywords" content="Webpack, HTML5, CSS">
     <meta name="author" content="Ирина Яковлева">
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"> 
 </head>
 <body>
     <div class="page">
         <header id="main" class="header">
-            <a href="https://praktikum.yandex.ru/" class="header__logo logo" target="_blank"><img src="images/logo.svg" alt="здесь должна быть картинка"></a>
+            <a href="https://praktikum.yandex.ru/" class="header__logo logo" target="_blank"><img src="<%=require('./images/logo.svg')%>" alt="Яндекс.Практикум"></a>
             <h1 class="header__title">Научиться учиться</h1>
             <div class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
             <a href="#description" class="header__link">Узнать &#8594;</a></div>
@@ -40,27 +40,27 @@
                 <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
                 <div class="cards">
                     <div class="cards__item">
-                            <img class="cards__image" src="./images/attention.png" alt="здесь должна быть картинка">
+                            <img class="cards__image" src="<%=require('./images/attention.png')%>" alt="здесь должна быть картинка">
                             <h3 class="cards__title">Два вида внимания</h3>
                             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
                     </div>
                     <div class="cards__item">
-                            <img class=cards__image src="./images/recall.png" alt="здесь должна быть картинка">
+                            <img class=cards__image src="<%=require('./images/recall.png')%>" alt="здесь должна быть картинка">
                             <h3 class="cards__title">Recall</h3>
                             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
                     </div>
                     <div class="cards__item">
-                            <img class=cards__image src="./images/interliving.png" alt="здесь должна быть картинка">
+                            <img class=cards__image src="<%=require('./images/interliving.png')%>" alt="здесь должна быть картинка">
                             <h3 class="cards__title">Интерливинг</h3>
                             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
                     </div>
                     <div class="cards__item">
-                            <img class=cards__image src="./images/question.png" alt="здесь должна быть картинка">
+                            <img class=cards__image src="<%=require('./images/question.png')%>" alt="здесь должна быть картинка">
                             <h3 class="cards__title">Вопросы</h3>
                             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
                     </div>
                     <div class="cards__item">
-                            <img class=cards__image src="./images/competence.png" alt="здесь должна быть картинка">
+                            <img class=cards__image src="<%=require('./images/competence.png')%>" alt="здесь должна быть картинка">
                             <h3 class="cards__title">Иллюзия компетентности</h3>
                             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
                     </div>
@@ -144,7 +144,7 @@
                     <h3 class="khan__quote-author">Джордж Лукас</h3>
                     <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
                     <div class="khan__book-container">
-                        <img class="khan__book-pic" src="./images/book.jpg" alt="здесь должна быть картинка">
+                        <img class="khan__book-pic" src="<%=require('./images/book.jpg')%>" alt="Обложка книги">
                         <div><a class="khan__buy-link" href="https://www.labirint.ru/books/483575/" target="_blank">Купить книгу →</a></div>
                     </div>
                 </div>        
@@ -202,10 +202,10 @@
                 <h2 class="section-title">Полезные ресурсы</h2>
                 <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
                 <div class="resources__logo-zone">
-                    <a href="https://arzamas.academy/" target="_blank"><img class=resources__logo src="./images/logo/arzamas.svg" alt="здесь должен быть логотип компании"></a>
-                    <a href="https://nplus1.ru/" target="_blank"><img class=resources__logo src="./images/logo/n1.svg" alt="здесь должен быть логотип компании"></a>
-                    <a href="https://strelka.com/ru" target="_blank"><img class=resources__logo src="./images/logo/strelka.svg" alt="здесь должен быть логотип компании"></a>
-                    <a href="https://polka.academy/" target="_blank"><img class=resources__logo src="./images/logo/polka.svg" alt="здесь должен быть логотип компании"></a>
+                    <a href="https://arzamas.academy/" target="_blank"><img class=resources__logo src="<%=require('./images/logo/arzamas.svg')%>" alt="здесь должен быть логотип Арзамас"></a>
+                    <a href="https://nplus1.ru/" target="_blank"><img class=resources__logo src="<%=require('./images/logo/n1.svg')%>" alt="здесь должен быть логотип N+1"></a>
+                    <a href="https://strelka.com/ru" target="_blank"><img class=resources__logo src="<%=require('./images/logo/strelka.svg')%>" alt="здесь должен быть логотип Strelka"></a>
+                    <a href="https://polka.academy/" target="_blank"><img class=resources__logo src="<%=require('./images/logo/polka.svg')%>" alt="здесь должен быть логотип Полка"></a>
                 </div>
             </section>
 
@@ -213,7 +213,7 @@
         <footer class="footer">
             <div class="footer__columns">
                 <div class="footer__copyright">
-                    <a href="https://praktikum.yandex.ru/" class="footer__logo logo" target="_blank"><img src="images/logo_white.svg" alt="здесь должна быть картинка"></a>
+                    <a href="https://praktikum.yandex.ru/" class="footer__logo logo" target="_blank"><img src="<%=require('./images/logo_white.svg')%>" alt="Яндекс.Практикум"></a>
                 </div>
                 <div class="footer__info">
                     <div class="footer__column-heading">О&nbsp;Практикуме</div>
@@ -226,18 +226,19 @@
                 <div class="footer__social">
                     <div class="footer__column-heading">Соцсети</div>
                     <a class="footer__link" href="https://www.facebook.com/yandex.praktikum/" target="_blank">
-                        <img class="footer__social-icon" src="images/facebook_white.svg" alt="логотип Facebook">&nbsp;Facebook
+                        <img class="footer__social-icon" src="<%=require('./images/facebook_white.svg')%>" alt="логотип">&nbsp;Facebook
                     </a>
                     <a class="footer__link" href="https://vk.com/yandex.praktikum" target="_blank">
-                        <img class="footer__columns_column_social-icon" src="images/vk_white.svg" alt="логотип Вконтакте">&nbsp;ВКонтакте
+                        <img class="footer__social-icon" src="<%=require('./images/vk_white.svg')%>" alt="логотип">&nbsp;ВКонтакте
                     </a>
                     <a class="footer__link" href="https://www.instagram.com/yndx.praktikum/" target="_blank">
-                        <img class="footer__columns_column_social-icon" src="images/instagram_white.svg" alt="логотип Instagram">&nbsp;Instagram
+                        <img class="footer__social-icon" src="<%=require('./images/instagram_white.svg')%>" alt="логотип">&nbsp;Instagram
                     </a>
                 </div>
             </div>
             <div class="footer__author">&#9400; 2019. Ирина Яковлева</div>
         </footer>
     </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
